@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{% static "css/blaze.css" %}" type="text/css" />
+ <meta charset="UTF-8">
+    <title>blaze</title>
+</head>
+
+
+
+<body>
+<header>
+    <marquee>get the latest info on python programming here</marquee><br>
+    <h1>BLAZE.INFO</h1>
+</header>
+<div>
+    {% if categories %}
+        <ul>
+        {% for category in categories %}
+            <li><strong>{{ category.name }}</strong></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        were is my post na
+    {% endif %}
+</div>
+
+<div>
+    <a href="blaze/about/">about blaze</a><br>
+    <img src="{% static "image/blaze.jpg" %}" alt="image of blaze.info"/>
+</div>
+</body>
+
+</html>
