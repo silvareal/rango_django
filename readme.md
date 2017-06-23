@@ -1,2 +1,2 @@
-these is mu rango project
-from rango with django
+these is the rango project
+from rango with django tutorials
